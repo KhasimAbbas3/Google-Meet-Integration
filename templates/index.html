@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Online Classes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>School Online Classes</h1>
+
+    <!-- ================= LOGIN SECTION ================= -->
+    <section id="login-section">
+        <h3>Login</h3>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn">Logout</button>
+    </section>
+
+    <hr>
+
+    <!-- ================= ADMIN SECTION ================= -->
+    <section id="admin-section" style="display:none;">
+        <h3>Create Meeting (Admin)</h3>
+
+        <input type="text" id="title" placeholder="Class / Subject">
+        <label>Start Time</label>
+        <input type="datetime-local" id="start_time">
+
+        <label>End Time</label>
+        <input type="datetime-local" id="end_time">
+
+        <button id="createMeetingBtn">Create & Go Live</button>
+    </section>
+
+    <hr>
+
+    <!-- ================= LIVE SESSIONS ================= -->
+    <section id="live-section">
+        <h3>Live Sessions</h3>
+        <button id="refreshBtn">Refresh</button>
+        <ul id="meetingList"></ul>
+    </section>
+
+    <!-- ================= SCRIPT ================= -->
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
